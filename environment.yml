@@ -1,0 +1,37 @@
+name: PyMouseTracker
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - altgraph=0.17.2
+  - bzip2=1.0.8
+  - ca-certificates=2021.10.8
+  - future=0.18.2
+  - libffi=3.4.2
+  - libzlib=1.2.11
+  - macholib=1.14
+  - openssl=3.0.0
+  - pefile=2021.9.3
+  - pip=21.3.1
+  - pyinstaller=4.7
+  - pyinstaller-hooks-contrib=2021.4
+  - python=3.10.1
+  - python_abi=3.10
+  - pywin32=303
+  - pywin32-ctypes=0.2.0
+  - pyyaml=6.0
+  - setuptools=60.2.0
+  - sqlite=3.37.0
+  - tk=8.6.11
+  - tzdata=2021e
+  - ucrt=10.0.20348.0
+  - vc=14.2
+  - vs2015_runtime=14.29.30037
+  - wheel=0.37.1
+  - xz=5.2.5
+  - yaml=0.2.5
+  - pip:
+    - pynput==1.7.6
+    - screeninfo==0.8
+    - six==1.16.0
+prefix: C:\Users\iwos0\.conda\envs\PyMouseTracker

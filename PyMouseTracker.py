@@ -106,6 +106,5 @@ if __name__ == '__main__':
     save(file_name)
 
     os.system(
-        f'""{config["ghostscript_path"]}" -sDEVICE=png16m -o "out/{file_name}.png" "temp/{file_name}.ps"'
+        f'""{config["ghostscript_path"]}" -sDEVICE=png16m -g1920x1080 -o "out/{file_name}.png" "temp/{file_name}.ps"'
     )
-    # os.system('pause')
