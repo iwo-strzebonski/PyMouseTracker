@@ -79,7 +79,7 @@ if __name__ == '__main__':
             print('Please set GhostScript path in the config.yml file!')
             sys.exit()
             
-    file_name = str(int(time.time()))
+    file_name = f'{int(time.time())}-{mw}x{mh}'
     turtle_init()
  
     print('To stop recording, press "<ctrl>+<alt>+h"')
@@ -106,5 +106,5 @@ if __name__ == '__main__':
     save(file_name)
 
     os.system(
-        f'""{config["ghostscript_path"]}" -sDEVICE=png16m -g1920x1080 -o "out/{file_name}.png" "temp/{file_name}.ps"'
+        f'""{config["ghostscript_path"]}" -sDEVICE=png16m -g{mw}x{mh} -o "out/{file_name}.png" "temp/{file_name}.ps"'
     )

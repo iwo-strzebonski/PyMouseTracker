@@ -34,4 +34,3 @@ dependencies:
     - pynput==1.7.6
     - screeninfo==0.8
     - six==1.16.0
-prefix: C:\Users\iwos0\.conda\envs\PyMouseTracker
