@@ -9,10 +9,12 @@ import yaml
 
 from pynput import keyboard, mouse
 
+
 def on_move(x: int, y: int):
     global pos_list
     global mw, mh
     pos_list.append((x - mw / 2, mh / 2 - y))
+
 
 def turtle_draw() -> None:
     global pos_list
@@ -21,20 +23,24 @@ def turtle_draw() -> None:
     turtle.goto(pos_list[0])
     turtle.pendown()
 
-    for x, y in pos_list[1:]:
+    for i, (x, y) in enumerate(pos_list[1:]):
         turtle.seth(turtle.towards(x, y))
         turtle.goto(x, y)
+        turtle.update()
+
 
 def turtle_init() -> None:
     global mw, mh
-    turtle.hideturtle()
     turtle.Screen().setup(mw + 4, mh + 8)
     turtle.color('red')
     turtle.speed('fastest')
+    turtle.tracer(0, 0)
+    turtle.showturtle()
 
 
 def save(file_name: str) -> None:
-    turtle.getscreen().getcanvas().postscript(file=f'temp/{file_name}.ps')
+    global mw, mh
+    turtle.getscreen().getcanvas().postscript(file=f'temp/{file_name}.ps', pagex=mw / 2, pagey=mh / 2)
     turtle.bye()
 
 

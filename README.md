@@ -1,5 +1,8 @@
 # PyMouseTracker
 
+Python Mouse Path renderer  
+Created using `Python 3.10`, `turtle` and `pynput`
+
 ## Create executable
 
 ### Windows (EXE)
