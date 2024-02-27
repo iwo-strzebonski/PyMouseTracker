@@ -2,7 +2,7 @@ altgraph==0.17.2
 future==0.18.3
 macholib==1.14
 pefile==2021.9.3
-pip==21.3.1
+pip==23.3
 pyinstaller==5.13.1
 pyinstaller-hooks-contrib==2021.4
 pynput==1.7.6
